@@ -41,9 +41,15 @@ Website/
 ├── src/
 │   ├── assets/
 │   ├── components/📄 Resume
+│   ├── containers/
+│   └── App.js
+├── resume.pdf
+├── package.json
+└── README.md
+
+```
 My resume is available at:
 📁 src/containers/greeting/resume.pdf
-```
 📬 Contact Me
 Email: sheikhwasimuddin786@gmail.com
 
@@ -53,9 +59,3 @@ GitHub: github.com/sheikhwasimuddin
 
 LinkedIn: linkedin.com/in/sheikhwasimuddin
 
-
-│   ├── containers/
-│   └── App.js
-├── resume.pdf
-├── package.json
-└── README.md
