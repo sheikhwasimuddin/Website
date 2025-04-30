@@ -15,12 +15,13 @@
   border-bottom-right-radius: 6px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  background-color: $progressBarSpanBG;
+  background-color: $edits;
   position: relative;
   overflow: hidden;
 }
 .skill {
   line-height: 3.5vw;
+  font-weight: 900;
 }
 .skill-bars {
   font-size: 28px;
@@ -41,6 +42,10 @@
   margin-left: 80px;
   max-width: 90%;
   height: auto;
+}
+.skills-heading{
+  font-weight: bolder;
+  text-align: center;
 }
 
 /* Media Query */

@@ -5,6 +5,15 @@
   max-height: 100px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+img, .container, .header, .menu {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 /* header */
 
 .dark-menu {
@@ -13,13 +22,93 @@
 }
 
 .dark-menu li a {
-  color: $textColorDark !important;
+  color: $textColorDark ;
+  border-radius: 10px;
 }
 
 .dark-menu li a:hover {
-  background-color: $buttonColor !important;
+  background-color: #000 ;
+}
+.dark-menu .sk{
+  color: #ffffff;
+  font-weight: 700;
+}
+.dark-menu .we{
+  color: #ffffff;
+  font-weight: 700;
+}
+.dark-menu .ac{
+  color: #ffffff;
+  font-weight: 700;
 }
 
+.sk {
+  margin: 4px 10px 15px;
+  transition: all 0.2s ease-in-out;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: x-large;
+}
+
+
+.sk:hover {
+  box-shadow: 0 2px 10px #eb6559 !important;
+  background-color: #eb6559 !important;
+  color: #ffffff !important;
+}
+
+.ac {
+  margin: 4px 10px 15px;
+  transition: all 0.2s ease-in-out;
+  color: #ffffff ;
+  font-weight: 700;
+  font-size: x-large;
+}
+
+.ac:hover {
+  box-shadow: 0 2px 10px #f7b908!important;
+  background-color: #f7b908!important;
+  color: #ffffff !important;
+}
+
+.we {
+  margin: 4px 10px 15px;
+  transition: all 0.2s ease-in-out;
+  color: #ffffff ;
+  font-weight: 700;
+  font-size: x-large;
+}
+
+.we:hover {
+  box-shadow: 0 1px 10px #47a148 !important;
+  background-color: #47a148 !important;
+  color: #ffffff !important;
+}
+.edu{
+  margin: 4px 10px 15px;
+  transition: all 0.2s ease-in-out;
+  color: #ffffff ;
+  font-weight: 700;
+}
+.edu:hover {
+  box-shadow: 0 2px 10px #f7b908!important;
+  background-color: #f7b908!important;
+  color: #ffffff !important;
+}
+
+.t {
+  margin: 4px 10px 15px;
+  transition: all 0.2s ease-in-out;
+  color: #ffffff ;
+  font-weight: 700;
+  font-size: x-large;
+}
+
+.t:hover {
+  box-shadow: 0 1px 10px #e159eb !important;
+  background-color: #e159eb !important;
+  color: #ffffff !important;
+}
 .header {
   background-color: $lightBackground1;
   max-width: 100%;
@@ -43,6 +132,7 @@
   padding: 15px 20px;
   color: $textColor;
   text-decoration: none;
+  border-radius: 10px;
 }
 
 .header li a:hover,
@@ -66,6 +156,8 @@
   font-variant-ligatures: no-common-ligatures;
   -webkit-font-variant-ligatures: no-common-ligatures;
   padding: 0 10px;
+  color:$edits;
+  
 }
 
 /* menu */
@@ -113,7 +205,7 @@
 
 .header .menu-icon .navicon-dark:before,
 .header .menu-icon .navicon-dark:after {
-  background: $textColorDark !important;
+  background: #4ade80 !important;
   content: "";
   display: block;
   height: 100%;
@@ -162,8 +254,10 @@
 @media (min-width: 48em) {
   .header li {
     float: left;
+
   }
   .header {
+    font-size: 12px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -175,8 +269,56 @@
     display: none;
   }
 }
-@media (max-width: 960px) and (min-width: 768px) {
+@media (max-width: 1200px) and (min-width: 768px) {
   .header {
     font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
+  .header .menu {
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+  .header li {
+    float: left;
+  }
+  
+}
+.menu {
+  max-height: 400px; /* or any height based on your layout */
+  overflow-y: auto;
+}
+.dark-menu {
+  max-height: 400px;
+  overflow-y: auto;
+}
+.dark-menu::-webkit-scrollbar {
+  width: 6px;
+}
+
+.dark-menu::-webkit-scrollbar-thumb {
+  background-color: #4ade80; /* Tailwind green-400 */
+  border-radius: 4px;
+}
+
+/* Optional: Make sure all containers scale properly */
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+/* Fix button overflow on mobile */
+button, .btn {
+  max-width: 90%;
+  word-wrap: break-word;
+}
+
+/* Optional: Prevent buttons from causing overflow */
+button, .btn {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

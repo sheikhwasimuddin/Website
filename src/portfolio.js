@@ -20,26 +20,25 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
-  subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
-  ),
+  username: "Sheikh Wasimuddin",
+  title: "Hey there",
+  subTitle:("I am Sheikh Wasimuddin.A passionate Full Stack Software Developer, AI And Cloud Enthusiast. Never stop Developing."),
+
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "src/containers/greeting/resume.pdf", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/sheikhwasimuddin",
+  linkedin: "https://www.linkedin.com/in/sheikhwasimuddin",
+  gmail: "sheikhwasimuddin786@gmail.com",
+  instagram: "https://www.instagram.com/sheikh_wasimuddin",
+  twitter: "https://x.com/sk_wasimuddin07",
+  gitlab: "https://gitlab.com/sheikhwasimuddin",
+  
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -48,15 +47,15 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
+  title: "Here's what i do",
   subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Develop highly interactive Front end / User Interfaces for your web applications"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("⚡ Progressive Web Applications ( PWA ) in normal and MERN Stack devloper."),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Create data visualizations and dashboards using Power BI for analytics and reporting."
     )
   ],
 
@@ -73,8 +72,16 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-css3-alt"
     },
     {
-      skillName: "sass",
+      skillName: "Sass",
       fontAwesomeClassname: "fab fa-sass"
+    },
+    {
+      skillName: "Bootstrap",
+      fontAwesomeClassname: "fab fa-bootstrap"
+    },
+    {
+      skillName: "TailwindCSS",
+      fontAwesomeClassname: "fas fa-wind"
     },
     {
       skillName: "JavaScript",
@@ -89,10 +96,6 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-node"
     },
     {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
       skillName: "npm",
       fontAwesomeClassname: "fab fa-npm"
     },
@@ -105,17 +108,43 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-aws"
     },
     {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
+      skillName: "R",
+      fontAwesomeClassname: "fab fa-r-project"
     },
     {
       skillName: "python",
       fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
+      skillName: "java",
+      fontAwesomeClassname: "fab fa-java"
+    },
+    {
+      skillName:"C",
+      fontAwesomeClassname:"fas fa-code"
+    },
+    {
+      skillName:"Expressjs",
+      fontAwesomeClassname:"fas fa-server"
+    },
+    
+    {
+      skillName: "MongoDB",
+      fontAwesomeClassname: "fas fa-database"
+    },
+    {
+      skillName: "Power BI",
+      fontAwesomeClassname: "fas fa-chart-bar"
+    },
+    {
+      skillName: "Figma",
+      fontAwesomeClassname: "fab fa-figma"
+    },
+    {
+      skillName: "Git",
+      fontAwesomeClassname: "fab fa-git-alt"
     }
+    
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -126,26 +155,48 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "Yeshwantrao Chavan College Of Engineering, Nagpur, Maharashtra",
+      logo: require("./assets/images/ycce.png"),
+      subHeader: "Bachelor of Technology In Computer Science And Engineering(IoT)",
+      duration: "August 2023 - June 2027",
+      desc: "Participated in various hackathon Across India",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+        "Majors In IoT",
+        "Minors In Cloud",
+        "Co-Head In Design In CTSC"
+        
+      ],
+      website: "https://www.ycce.edu"
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
-    }
+      schoolName: "Burgess English Medium School, Bilaspur, Chhattisgarh",
+      logo: require("./assets/images/burgess.png"),
+      subHeader: "Senior Secondary Education",
+      duration: "August 2021 - July 2023",
+      desc: "",
+      descBullets: [
+        "Completed Class 12th(In Mathematics)",
+        "CBSE XII:85.6%"
+        
+      ],
+      website:"https://burgessenglish.com/",
+    },
+    {
+      schoolName: "St.Xaviers High School, Bilaspur, Chhattisgarh",
+      logo: require("./assets/images/xavier.png"),
+      subHeader: "Primary And Secondary Education",
+      duration: "April 2008 - June 2021",
+      desc: "",
+      descBullets: [
+        "Completed Class 10th",
+        "CBSE X - 86.5%"
+      ],
+      website:"https://stxaviersbilaspur.com"
+    },
+
   ]
 };
+
 
 // Your top 3 proficient stacks/tech experience
 
@@ -174,70 +225,73 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Front-End Software Developer Intern",
+      company: "Skyscanner",
+      companylogo: require("./assets/images/skyscanner.png"),
+      date: "March 2025 – April 2025",
+      desc: "Front-End Software Developer | Skyscanner (Forage)",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Developed a Backpack React Web App as part of the program. Worked with React.js, JavaScript, HTML, CSS, and Git",
+        "Designed interactive user interfaces and managed component state.",
+        " Optimized performance and followed industry best practices. ",
+        "Gained hands-on experience in front-end development."
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Junior Software Developer Intern",
+      company: "YuvaIntern ",
+      companylogo: require("./assets/images/yuva.png"),
+      date: "April 2025 – May 2025",
+      desc: "Junior Software Developer Intern At Yuva Intern",
+      descBullets: [
+        "Implemented interactive UI elements following modern design practices.",
+        "Developed front-end components and optimized web application performance.",
+        " Strengthened skills in frontend development, code optimization, and cross-browser compatibility. ",
+        "Gained hands-on experience in front-end development."
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    }
-  ]
-};
-
+      role: "Co head In Design",
+      company: "CTSC YCCE ",
+      companylogo: require("./assets/images/ctsc.jpg"),
+      date: "March 2025 – Present",
+      desc: "Co-Head of Design in CTSC YCCE",
+      descBullets: [
+        "As Co-Head of Design at CTSC YCCE, I led the visual design efforts for technical and cultural events, workshops, and seminars organized by the chapter.",
+        "  I focused on creating clean, intuitive, and responsive designs that enhanced user engagement and team coordination. ",
+        "My responsibilities included designing event posters, social media creatives, banners, and presentations using tools like Figma, Canva, and Adobe Illustrator."
+      ]
+    },
+  ]};
 /* Your Open Source Section to View Your Github Pinned Projects
-To know how to get github key look at readme.md */
+To know how to 
+  ]get github key look at readme.md */
 
-const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
-};
+  const openSource = {
+    showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
+    display: true // Set false to hide this section, defaults to true
+  };
 
 // Some big projects you have worked on
 
 const bigProjects = {
   title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  subtitle: "Some big project that helped me to grow",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
+      image: require("./assets/images/logo.png"),
+      projectName: "Cool City",
+      projectDesc: ["Developed an interactive web platform to spread awareness about the Urban Heat Island (UHI) effect and promote sustainable urban planning",
+        "Integrated dynamic heatmap visualizations using Ventusky weather maps to display real-time urban temperature, wind, and environmental data.",
+        "A real-time chatbot assistant further enhances user engagement by answering climate-related queries and guiding navigation"],
+        footerLink: [
         {
           name: "Visit Website",
-          url: "http://saayahealth.com/"
+          url: "https://cool-city.netlify.app/"
         }
         //  you can add extra buttons here.
       ]
     },
-    {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://nextu.se/"
-        }
-      ]
-    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -252,50 +306,42 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "Coursera",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+        "Introduction to Front-End Development,        Foundations of Project Management,       Technical Support Fundamentals.",
+      image: require("./assets/images/coursera.png"),
+      imageAlt: "Coursera Logo",
       footerLink: [
         {
           name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+          url: "https://drive.google.com/file/d/1NEbrJaQkXYZ_1nZHREUk27iDlmj7o5h0/view?usp=sharing"
         },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
       ]
     },
     {
-      title: "Google Assistant Action",
+      title: "NIT Raipur",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+        " Blockchain, Fintech, and Cyber Security (BFC-25), NIT Raipur",
+      image: require("./assets/images/nitrr.png"),
+      imageAlt: "NIT Raipur Logo",
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+          name: "View Certificate",
+          url: "https://drive.google.com/file/d/1BV9tbbjF5vsSPF9rLwqVK0F0mIloEhqx/view?usp=sharing"
         }
       ]
     },
 
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
+      title: "NPTEL Certificates",
+      subtitle: ["Centre-State Relations in India(Feb-Apr2024), ",
+      " Soft Skill Development (Jul–Sep 2024)."],
+      image: require("./assets/images/nptel.png"),
+      imageAlt: "NPTEL Logo",
       footerLink: [
-        {name: "Certification", url: ""},
         {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          name: "View Certificate",
+          url: "https://drive.google.com/file/d/19e7N7uMn9w4UNKHozNEq7FQjl9miKyGS/view?usp=sharing"
         }
       ]
     }
@@ -318,13 +364,13 @@ const blogSection = {
         "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
     },
     {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
+      url: "",
       title: "Why REACT is The Best?",
       description:
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -338,12 +384,12 @@ const talkSection = {
   talks: [
     {
       title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
+      subtitle: "Codelab at GDG DevFest  2019",
+      slides_url: "",
+      event_url: "/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -354,9 +400,9 @@ const podcastSection = {
 
   // Please Provide with Your Podcast embeded Link
   podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
+    ""
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
@@ -372,18 +418,19 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  number: "+91-XXXXXXXXXX",
+  email_address: "sheikhwasimuddin786@gmail.com"
+  
 };
 
 // Twitter Section
 
 const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  userName: "sk_wasimuddin07", //Replace "twitter" with your twitter username without @
+  display: false // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
@@ -394,7 +441,6 @@ export {
   educationInfo,
   techStack,
   workExperiences,
-  openSource,
   bigProjects,
   achievementSection,
   blogSection,
@@ -403,5 +449,6 @@ export {
   contactInfo,
   twitterDetails,
   isHireable,
+  openSource,
   resumeSection
 };

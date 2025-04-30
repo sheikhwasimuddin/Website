@@ -66,13 +66,13 @@ export default function StartupProject() {
                       {project.projectDesc}
                     </p>
                     {project.footerLink ? (
-                      <div className="project-card-footer">
+                      <div className="btn">
                         {project.footerLink.map((link, i) => {
                           return (
                             <span
                               key={i}
                               className={
-                                isDark ? "dark-mode project-tag" : "project-tag"
+                                isDark ? "dark-mode main-button " : "main-button "
                               }
                               onClick={() => openUrlInNewTab(link.url)}
                             >

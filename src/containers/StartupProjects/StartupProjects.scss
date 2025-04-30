@@ -2,8 +2,22 @@
 
 .card-image {
   max-width: 100%;
-  height: auto;
+  height: 250px;
   width: 250px;
+  border: 2px solid $edits;
+  border-radius: 50%;
+}
+.btn{
+  text-align: center;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px;
+}
+.project-subtitle{
+  font-weight: 700;
+  text-align: center;
 }
 .card-title {
   color: $titleColor;
@@ -16,6 +30,8 @@
   color: $cardSubtitle;
   font-size: 17px;
   line-height: 1.5rem;
+  text-align: center;
+  font-weight: 700;
 }
 .project-card {
   display: flex;
@@ -56,12 +72,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem 1rem;
+  
+}
+.projects-container:hover {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem 1rem;
+  box-shadow: 0 1px 10px $edits;
+  border-radius: 10px;
 }
 
 .project-card-footer span.project-tag {

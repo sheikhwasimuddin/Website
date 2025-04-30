@@ -1,23 +1,50 @@
+@import "../../_globalColor";
+
 .splash-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  padding: 1rem;
+
+  // Mobile-specific adjustments
+  @media (max-width: 768px) {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
 }
 
 .splash-animation-container {
   height: 50vh;
+  color: $edits;
+
+  @media (max-width: 768px) {
+    height: auto;
+    margin-bottom: 1.5rem;
+  }
 }
 
 .splash-title-container {
   font-size: 2.5rem;
   text-decoration: none;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
 }
+
 .splash-title {
   font-family: "Agustina Regular", cursive;
   font-weight: bold;
   font-variant-ligatures: no-common-ligatures;
   -webkit-font-variant-ligatures: no-common-ligatures;
   padding: 0 20px;
+  color: $edits;
+
+  @media (max-width: 768px) {
+    padding: 0 10px;
+    font-size: 1.75rem;
+  }
 }
+

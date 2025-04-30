@@ -8,6 +8,7 @@
 
 .skills-text-div {
   margin-left: 50px;
+  font-weight: 700;
 }
 
 .skills-main-div > * {
@@ -22,10 +23,12 @@
 
 .skills-heading {
   font-size: 56px;
-  font-weight: 400;
+  font-weight: bolder;
 }
 .subTitle {
   color: $subTitle;
+  font-weight: 700
+  ;
 }
 
 /* Media Query */
@@ -60,5 +63,6 @@
   .skills-image-div {
     /* display: none; */
     order: 2;
+ 
   }
 }

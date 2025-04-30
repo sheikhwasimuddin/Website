@@ -26,7 +26,7 @@ export default function Achievement() {
             <p
               className={
                 isDark
-                  ? "dark-mode subTitle achievement-subtitle"
+                  ? "dark-mode sub achievement-subtitle"
                   : "subTitle achievement-subtitle"
               }
             >

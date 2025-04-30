@@ -2,8 +2,7 @@
 
 .profile-image {
   border-radius: 50%;
-  border: 0.5rem solid $githubProfileCardBorder;
-  margin-left: auto;
+  border: 2px solid $githubProfileCardBorder;
   width: 100%;
   max-width: 350px;
   height: auto;
@@ -12,13 +11,13 @@
 }
 
 .profile-image:hover {
-  box-shadow: none;
+  box-shadow: 0 1px 10px $edits;
 }
 
 .prof-title {
   margin: 0;
   font-size: 40px;
-  font-weight: 400;
+  font-weight: bolder;
 }
 
 .location-div {
@@ -41,7 +40,7 @@
   text-align: right;
   flex: 20%;
   max-width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .bio-text {
@@ -90,10 +89,12 @@
     width: 100%;
     max-width: 250px;
     height: auto;
+    
   }
 
   .profile-image:hover {
     box-shadow: $lightBoxShadow 0 50px 50px -50px;
+    box-shadow:0 1px 10px $edits;
     transition: 0.3s ease-out;
   }
 

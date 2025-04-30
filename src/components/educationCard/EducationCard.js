@@ -25,13 +25,15 @@ export default function EducationCard({school}) {
         <div className="education-card">
           {school.logo && (
             <div className="education-card-left">
-              <img
+              <div className="imgb">
+                <img
                 crossOrigin={"anonymous"}
                 ref={imgRef}
                 className="education-roundedimg"
                 src={school.logo}
                 alt={school.schoolName}
               />
+            </div>
             </div>
           )}
           <div className="education-card-right">
@@ -54,11 +56,23 @@ export default function EducationCard({school}) {
               >
                 {school.duration}
               </p>
-              <p className="education-text-desc">{school.desc}</p>
-              <div className="education-text-bullets">
-                <ul>
-                  <GetDescBullets descBullets={school.descBullets} />
-                </ul>
+              <p className="education-text-school">{school.desc}</p>
+              <div className="education-text-subHeader">
+              <ul style={{ listStyleType: 'none', paddingLeft: '0',}} className="education-text-school">
+                    <GetDescBullets descBullets={school.descBullets} />
+              </ul>
+                {school.website && (
+                  <div style={{ marginTop: "1rem" }} className="mainbtn">
+                    <a
+                      className="main-button"
+                      href={school.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      WEBSITE
+                    </a>
+                  </div>
+                )}
               </div>
             </div>
           </div>
