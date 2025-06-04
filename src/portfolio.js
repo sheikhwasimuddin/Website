@@ -19,6 +19,8 @@ const illustration = {
   animated: true // Set to false to use static SVG
 };
 
+
+
 const greeting = {
   username: "Sheikh Wasimuddin",
   title: "Hey there",
@@ -216,7 +218,7 @@ const techStack = {
       progressPercentage: "60%"
     }
   ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+  displayCodersrank: true // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
 
 // Work experience section
@@ -224,6 +226,7 @@ const techStack = {
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
+   
     {
       role: "Front-End Software Developer Intern",
       company: "Skyscanner",
@@ -261,6 +264,20 @@ const workExperiences = {
         "  I focused on creating clean, intuitive, and responsive designs that enhanced user engagement and team coordination. ",
         "My responsibilities included designing event posters, social media creatives, banners, and presentations using tools like Figma, Canva, and Adobe Illustrator."
       ]
+    },
+    {
+      role: "Summer Research Intern",
+      company: "Maulana Azad National Institute of Technology",
+      companylogo: require("./assets/images/manit.png"),
+      date: "May 2025 – July 2025",
+      desc: "Outreach Summer Internship",
+      descBullets: [
+  "Worked under the guidance of Dr. N. Jayanth at the Centre of Excellence in Product Design and Smart Manufacturing",
+  "Gained hands-on experience in Mechatronics, integrating mechanical systems with electronics and control engineering",
+  "Explored Additive Manufacturing (3D Printing) techniques and their applications in rapid prototyping and product development",
+
+]
+
     },
   ]};
 /* Your Open Source Section to View Your Github Pinned Projects
@@ -319,7 +336,7 @@ const achievementSection = {
       ]
     },
     {
-      title: "NIT Raipur",
+      title: "Certifications",
       subtitle:
         " Blockchain, Fintech, and Cyber Security (BFC-25), NIT Raipur",
       image: require("./assets/images/nitrr.png"),
@@ -427,7 +444,7 @@ const contactInfo = {
 
 const twitterDetails = {
   userName: "sk_wasimuddin07", //Replace "twitter" with your twitter username without @
-  display: false // Set true to display this section, defaults to false
+  display: true // Set true to display this section, defaults to false
 };
 
 const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
