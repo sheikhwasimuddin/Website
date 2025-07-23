@@ -312,25 +312,7 @@ const bigProjects = {
   ],
   display: true // Set false to hide this section, defaults to true
 };
-{
-  title: "Big Projects",
-  subtitle: "Some big project that helped me to grow",
-  projects: [
-    {
-      projectName: "MedIoT",
-      projectDesc: ["MedIoT is an innovative Medical Internet of Things (IoT) project designed to provide real-time health monitoring, disease prediction, and emergency alerting using smart devices, machine learning, and cloud integration."],
-                    ["It aims to improve remote patient care and ensure early detection of health issues using wearable sensors and AI."],
-        footerLink: [
-        {
-          name: "Visit Website",
-          url: "https://medicaliot.netlify.app/"
-        }
-        //  you can add extra buttons here.
-      ]
-    },
-  ],
-  display: true // Set false to hide this section, defaults to true
-};
+
 
 // Achievement Section
 // Include certificates, talks etc
