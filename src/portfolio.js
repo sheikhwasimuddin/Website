@@ -317,7 +317,6 @@ const bigProjects = {
   subtitle: "Some big project that helped me to grow",
   projects: [
     {
-      image: require("./assets/images/"),
       projectName: "MedIoT",
       projectDesc: ["MedIoT is an innovative Medical Internet of Things (IoT) project designed to provide real-time health monitoring, disease prediction, and emergency alerting using smart devices, machine learning, and cloud integration."],
                     ["It aims to improve remote patient care and ensure early detection of health issues using wearable sensors and AI."],
