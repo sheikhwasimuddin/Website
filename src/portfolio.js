@@ -257,7 +257,7 @@ const workExperiences = {
       role: "Co head In Design",
       company: "CTSC YCCE ",
       companylogo: require("./assets/images/ctsc.jpg"),
-      date: "August 2024 – Present",
+      date: "August 2024 – July 2025 ",
       desc: "Co-Head of Design in CTSC YCCE",
       descBullets: [
         "As Co-Head of Design at CTSC YCCE, I led the visual design efforts for technical and cultural events, workshops, and seminars organized by the chapter.",
