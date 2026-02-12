@@ -3,7 +3,7 @@
 Welcome to my personal portfolio website! This site showcases my work as a front-end developer and web enthusiast.
 
 [![GitHub](https://img.shields.io/badge/GitHub-sheikhwasimuddin-181717?style=flat&logo=github)](https://github.com/sheikhwasimuddin)
-[![Live Demo](https://img.shields.io/badge/Live-Demo-green?style=flat&logo=netlify)](https://sheikhwasimuddin.github.io/Website/)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-green?style=flat&logo=netlify)](https://sheikhwasimuddin.netlify.app)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-sheikhwasimuddin-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/sheikhwasimuddin)
 
 ---
