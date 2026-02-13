@@ -309,6 +309,23 @@ const bigProjects = {
         //  you can add extra buttons here.
       ]
     },
+    {
+  image: require("./assets/images/mediot.png"),
+  projectName: "MedIoT",
+  projectDesc: [
+    "Developed an AI-powered Medical Internet of Things (MedIoT) platform for real-time patient health monitoring and disease prediction.",
+    "Integrated IoT sensor-based vital tracking with a web dashboard to visualize heart rate, temperature, SpO₂, and emergency alerts.",
+    "Implemented machine learning models achieving 92% prediction accuracy along with a medical chatbot assistant for symptom analysis and health guidance."
+  ],
+  footerLink: [
+    {
+      name: "Visit Website",
+      url: "https://medicaliot.netlify.app/"
+    }
+    // you can add extra buttons here.
+  ]
+},
+
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -436,7 +453,7 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+91-XXXXXXXXXX",
+  number: "+91-9589154386",
   email_address: "sheikhwasimuddin786@gmail.com"
   
 };
