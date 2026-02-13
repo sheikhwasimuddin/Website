@@ -165,7 +165,10 @@ const educationInfo = {
       descBullets: [
         "Majors In IoT",
         "Minors In Cloud",
-        "Co-Head In Design In CTSC"
+        "Co-Head In Design In CTSC",
+        "Co-Head In Database In Yash 26.0 And TechFest(CT-2025)",
+        "Database Member At GFG YCCE",
+        
         
       ],
       website: "https://www.ycce.edu"
