@@ -310,7 +310,7 @@ const bigProjects = {
       ]
     },
     {
-  image: require("./assets/images/mediot.png"),
+  image: require("./assets/images/MEDIOT.png"),
   projectName: "MedIoT",
   projectDesc: [
     "Developed an AI-powered Medical Internet of Things (MedIoT) platform for real-time patient health monitoring and disease prediction.",
