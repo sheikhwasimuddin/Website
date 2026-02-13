@@ -10,7 +10,8 @@ Welcome to my personal portfolio website! This site showcases my work as a front
 
 ## 📸 Preview
 
-![Portfolio Screenshot](src/assets/images/Screenshot 2025-04-30 214453.png)
+<img width="1893" height="856" alt="image" src="https://github.com/user-attachments/assets/f1dcb5f2-b862-4eb3-ad6d-80a84c5defca" />
+
 
 ---
 
