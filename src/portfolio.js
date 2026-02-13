@@ -27,7 +27,7 @@ const greeting = {
   subTitle:("I am Sheikh Wasimuddin.A passionate Full Stack Software Developer, AI And Cloud Enthusiast. Never stop Developing."),
 
   resumeLink:
-    "src/containers/greeting/resume.pdf", // Set to empty to hide the button
+    "src/containers/greeting/sheikhwasimuddin_resume.pdf", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
