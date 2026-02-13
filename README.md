@@ -32,7 +32,7 @@ Welcome to my personal portfolio website! This site showcases my work as a front
 
 
 My resume is available at:
-📁 src/containers/greeting/resume.pdf
+📁 src/containers/greeting/sheikhwasimuddin_resume.pdf
 📬 Contact Me
 Email: sheikhwasimuddin786@gmail.com
 GitHub: github.com/sheikhwasimuddin
