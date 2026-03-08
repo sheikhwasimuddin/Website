@@ -94,8 +94,7 @@ if (USE_GITHUB_DATA === "true") {
   req.end();
 }
 
-<<<<<<< HEAD
-=======
+
 // ── Football: fetch next Real Madrid scheduled match ──────────────────────────
 const FOOTBALL_API_TOKEN = "8565ad2223864f5fa20dac2795660f83";
 const FOOTBALL_TEAM_ID = 86;
@@ -144,7 +143,6 @@ footballReq.on("error", error => {
 footballReq.end();
 // ──────────────────────────────────────────────────────────────────────────────
 
->>>>>>> main
 if (MEDIUM_USERNAME !== undefined) {
   console.log(`Fetching Medium blogs data for ${MEDIUM_USERNAME}`);
   const options = {

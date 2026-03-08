@@ -24,15 +24,11 @@ const illustration = {
 const greeting = {
   username: "Sheikh Wasimuddin",
   title: "Hey there",
-<<<<<<< HEAD
-  subTitle:("I am Sheikh Wasimuddin.A passionate Full Stack Software Developer, AI And Cloud Enthusiast. Never stop Developing."),
-=======
-  subTitle: ("I am Sheikh Wasimuddin.A passionate Full Stack Software Developer, AI And Cloud Enthusiast. Never stop Developing."),
->>>>>>> main
-
+  subTitle:
+    "I am Sheikh Wasimuddin. A passionate Full Stack Software Developer, AI and Cloud Enthusiast. Never stop Developing.",
   resumeLink:
-    "src/containers/greeting/sheikhwasimuddin_resume.pdf", // Set to empty to hide the button
-  displayGreeting: true // Set false to hide this section, defaults to true
+    "src/containers/greeting/sheikhwasimuddin_resume.pdf",
+  displayGreeting: true
 };
 
 // Social Media Links
@@ -44,14 +40,7 @@ const socialMediaLinks = {
   instagram: "https://www.instagram.com/sheikh_wasimuddin",
   twitter: "https://x.com/sk_wasimuddin07",
   gitlab: "https://gitlab.com/sheikhwasimuddin",
-<<<<<<< HEAD
-  
-=======
-
->>>>>>> main
-  // Instagram, Twitter and Kaggle are also supported in the links!
-  // To customize icons and social links, tweak src/components/SocialMedia
-  display: true // Set true to display this section, defaults to false
+  display: true
 };
 
 // Skills Section
@@ -130,16 +119,6 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-java"
     },
     {
-<<<<<<< HEAD
-      skillName:"C",
-      fontAwesomeClassname:"fas fa-code"
-    },
-    {
-      skillName:"Expressjs",
-      fontAwesomeClassname:"fas fa-server"
-    },
-    
-=======
       skillName: "C",
       fontAwesomeClassname: "fas fa-code"
     },
@@ -148,7 +127,11 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-server"
     },
 
->>>>>>> main
+    {
+      skillName: "Expressjs",
+      fontAwesomeClassname: "fas fa-server"
+    },
+
     {
       skillName: "MongoDB",
       fontAwesomeClassname: "fas fa-database"
@@ -165,11 +148,7 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "Git",
       fontAwesomeClassname: "fab fa-git-alt"
     }
-<<<<<<< HEAD
-    
-=======
 
->>>>>>> main
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -191,13 +170,6 @@ const educationInfo = {
         "Co-Head In Design In CTSC",
         "Co-Head In Database In Yash 26.0 And TechFest(CT-2025)",
         "Database Member At GFG YCCE",
-<<<<<<< HEAD
-        
-        
-=======
-
-
->>>>>>> main
       ],
       website: "https://www.ycce.edu"
     },
@@ -210,15 +182,8 @@ const educationInfo = {
       descBullets: [
         "Completed Class 12th(In Mathematics)",
         "CBSE XII:85.6%"
-<<<<<<< HEAD
-        
       ],
-      website:"https://burgessenglish.com/",
-=======
-
-      ],
-      website: "https://burgessenglish.com/",
->>>>>>> main
+      website: "https://burgessenglish.com/"
     },
     {
       schoolName: "St.Xaviers High School, Bilaspur, Chhattisgarh",
@@ -230,11 +195,7 @@ const educationInfo = {
         "Completed Class 10th",
         "CBSE X - 86.5%"
       ],
-<<<<<<< HEAD
-      website:"https://stxaviersbilaspur.com"
-=======
       website: "https://stxaviersbilaspur.com"
->>>>>>> main
     },
 
   ]
@@ -267,11 +228,6 @@ const techStack = {
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
-<<<<<<< HEAD
-   
-=======
-
->>>>>>> main
     {
       role: "Front-End Software Developer Intern",
       company: "Skyscanner",
@@ -317,41 +273,22 @@ const workExperiences = {
       date: "May 2025 – July 2025",
       desc: "Outreach Summer Internship",
       descBullets: [
-<<<<<<< HEAD
-  "Worked under the guidance of Dr. N. Jayanth at the Centre of Excellence in Product Design and Smart Manufacturing",
-  "Gained hands-on experience in Mechatronics, integrating mechanical systems with electronics and control engineering",
-  "Explored Additive Manufacturing (3D Printing) techniques and their applications in rapid prototyping and product development",
-
-]
-
-    },
-  ]};
-=======
         "Worked under the guidance of Dr. N. Jayanth at the Centre of Excellence in Product Design and Smart Manufacturing",
         "Gained hands-on experience in Mechatronics, integrating mechanical systems with electronics and control engineering",
-        "Explored Additive Manufacturing (3D Printing) techniques and their applications in rapid prototyping and product development",
-
+        "Explored Additive Manufacturing (3D Printing) techniques and their applications in rapid prototyping and product development"
       ]
-
-    },
+    }
   ]
 };
->>>>>>> main
+
 /* Your Open Source Section to View Your Github Pinned Projects
 To know how to 
   ]get github key look at readme.md */
 
-<<<<<<< HEAD
-  const openSource = {
-    showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-    display: true // Set false to hide this section, defaults to true
-  };
-=======
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
   display: true // Set false to hide this section, defaults to true
 };
->>>>>>> main
 
 // Some big projects you have worked on
 
@@ -365,11 +302,7 @@ const bigProjects = {
       projectDesc: ["Developed an interactive web platform to spread awareness about the Urban Heat Island (UHI) effect and promote sustainable urban planning",
         "Integrated dynamic heatmap visualizations using Ventusky weather maps to display real-time urban temperature, wind, and environmental data.",
         "A real-time chatbot assistant further enhances user engagement by answering climate-related queries and guiding navigation"],
-<<<<<<< HEAD
-        footerLink: [
-=======
       footerLink: [
->>>>>>> main
         {
           name: "Visit Website",
           url: "https://cool-city.netlify.app/"
@@ -378,23 +311,6 @@ const bigProjects = {
       ]
     },
     {
-<<<<<<< HEAD
-  image: require("./assets/images/MEDIOT.png"),
-  projectName: "MedIoT",
-  projectDesc: [
-    "Developed an AI-powered Medical Internet of Things (MedIoT) platform for real-time patient health monitoring and disease prediction.",
-    "Integrated IoT sensor-based vital tracking with a web dashboard to visualize heart rate, temperature, SpO₂, and emergency alerts.",
-    "Implemented machine learning models achieving 92% prediction accuracy along with a medical chatbot assistant for symptom analysis and health guidance."
-  ],
-  footerLink: [
-    {
-      name: "Visit Website",
-      url: "https://medicaliot.netlify.app/"
-    }
-    // you can add extra buttons here.
-  ]
-},
-=======
       image: require("./assets/images/MEDIOT.png"),
       projectName: "MedIoT",
       projectDesc: [
@@ -410,7 +326,6 @@ const bigProjects = {
         // you can add extra buttons here.
       ]
     },
->>>>>>> main
 
   ],
   display: true // Set false to hide this section, defaults to true
@@ -456,11 +371,7 @@ const achievementSection = {
     {
       title: "NPTEL Certificates",
       subtitle: ["Centre-State Relations in India(Feb-Apr2024), ",
-<<<<<<< HEAD
-      " Soft Skill Development (Jul–Sep 2024)."],
-=======
         " Soft Skill Development (Jul–Sep 2024)."],
->>>>>>> main
       image: require("./assets/images/nptel.png"),
       imageAlt: "NPTEL Logo",
       footerLink: [
@@ -545,28 +456,17 @@ const contactInfo = {
     "Discuss a project or just want to say hi? My Inbox is open for all.",
   number: "+91-9589154386",
   email_address: "sheikhwasimuddin786@gmail.com"
-<<<<<<< HEAD
-  
-=======
-
->>>>>>> main
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "sk_wasimuddin07", //Replace "twitter" with your twitter username without @
-<<<<<<< HEAD
   display: true // Set true to display this section, defaults to false
-=======
-  display: false // Set true to display this section, defaults to false
->>>>>>> main
 };
 
 const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
-<<<<<<< HEAD
-=======
 // Researcher Terminal Section
 const researcherTerminal = {
   display: true,
@@ -619,8 +519,6 @@ const githubProfileSection = {
   userName: "sheikhwasimuddin"
 };
 
-
->>>>>>> main
 export {
   illustration,
   greeting,
@@ -639,14 +537,10 @@ export {
   twitterDetails,
   isHireable,
   openSource,
-<<<<<<< HEAD
-  resumeSection
-=======
   resumeSection,
   researcherTerminal,
   aiChatbot,
   researcherLaboratory,
   liveMetrics,
   githubProfileSection
->>>>>>> main
 };

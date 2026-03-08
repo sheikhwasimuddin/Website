@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import React, {useContext} from "react";
 import {Fade} from "react-reveal";
 import "./Greeting.scss";
@@ -11,7 +11,6 @@ import StyleContext from "../../contexts/StyleContext";
 
 export default function Greeting() {
   const {isDark} = useContext(StyleContext);
-=======
 import React, { useContext } from "react";
 import { Fade } from "react-reveal";
 import "./Greeting.scss";
@@ -24,7 +23,7 @@ import StyleContext from "../../contexts/StyleContext";
 
 export default function Greeting() {
   const { isDark } = useContext(StyleContext);
->>>>>>> main
+
   if (!greeting.displayGreeting) {
     return null;
   }
