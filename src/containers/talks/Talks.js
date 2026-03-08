@@ -11,7 +11,7 @@ export default function Talks() {
     return null;
   }
   return (
-    <Fade bottom duration={1000} distance="20px">
+    
       <div className="main" id="talks">
         <div className="talk-header">
           <h1 className="talk-header-title">{talkSection.title}</h1>
@@ -41,6 +41,6 @@ export default function Talks() {
           })}
         </div>
       </div>
-    </Fade>
+    
   );
 }
