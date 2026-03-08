@@ -16,6 +16,11 @@ import ScrollToTopButton from "./topbutton/Top";
 import Twitter from "./twitter-embed/twitter";
 import Profile from "./profile/Profile";
 import SplashScreen from "./splashScreen/SplashScreen";
+<<<<<<< HEAD
+=======
+import GithubProfile from "./githubProfile/GithubProfile";
+import FootballFan from "./footballFan/FootballFan";
+>>>>>>> main
 import {splashScreen} from "../portfolio";
 import {StyleProvider} from "../contexts/StyleContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
@@ -28,6 +33,12 @@ const Main = () => {
     useState(true);
 
   useEffect(() => {
+<<<<<<< HEAD
+=======
+    // Always start at the top on load
+    window.scrollTo(0, 0);
+
+>>>>>>> main
     if (splashScreen.enabled) {
       const splashTimer = setTimeout(
         () => setIsShowingSplashAnimation(false),
@@ -62,6 +73,11 @@ const Main = () => {
             <Blogs />
             <Talks />
             <Twitter />
+<<<<<<< HEAD
+=======
+            <GithubProfile />
+            <FootballFan />
+>>>>>>> main
             <Podcast />
             <Profile />
             <Footer />

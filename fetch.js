@@ -94,6 +94,57 @@ if (USE_GITHUB_DATA === "true") {
   req.end();
 }
 
+<<<<<<< HEAD
+=======
+// ── Football: fetch next Real Madrid scheduled match ──────────────────────────
+const FOOTBALL_API_TOKEN = "8565ad2223864f5fa20dac2795660f83";
+const FOOTBALL_TEAM_ID = 86;
+
+console.log("Fetching next Real Madrid match from football-data.org...");
+
+const footballOptions = {
+  hostname: "api.football-data.org",
+  path: `/v4/teams/${FOOTBALL_TEAM_ID}/matches?status=SCHEDULED`,
+  port: 443,
+  method: "GET",
+  headers: {
+    "X-Auth-Token": FOOTBALL_API_TOKEN
+  }
+};
+
+const footballReq = https.request(footballOptions, res => {
+  let footballData = "";
+
+  console.log(`football-data.org statusCode: ${res.statusCode}`);
+
+  res.on("data", d => {
+    footballData += d;
+  });
+
+  res.on("end", () => {
+    try {
+      const parsed = JSON.parse(footballData);
+      const matches = parsed.matches || [];
+      const nextMatch = matches.length > 0 ? matches[0] : null;
+      const output = JSON.stringify({ nextMatch });
+      fs.writeFile("./public/nextMatch.json", output, function (err) {
+        if (err) return console.log(err);
+        console.log("saved file to public/nextMatch.json");
+      });
+    } catch (e) {
+      console.log("Failed to parse football data:", e.message);
+    }
+  });
+});
+
+footballReq.on("error", error => {
+  console.log("Football API request failed:", error.message);
+});
+
+footballReq.end();
+// ──────────────────────────────────────────────────────────────────────────────
+
+>>>>>>> main
 if (MEDIUM_USERNAME !== undefined) {
   console.log(`Fetching Medium blogs data for ${MEDIUM_USERNAME}`);
   const options = {
