@@ -1,0 +1,597 @@
+.football-main {
+  padding: 60px 20px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(34, 197, 94, 0.04) 30%,
+    rgba(34, 197, 94, 0.04) 70%,
+    transparent 100%
+  );
+}
+
+/* ── Header ── */
+.football-header {
+  text-align: center;
+}
+
+.football-title-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.football-ball-icon {
+  font-size: 38px;
+  animation: spin 4s linear infinite;
+  display: inline-block;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.football-heading {
+  font-size: 42px;
+  font-weight: 800;
+  margin: 0;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.dark-mode .football-heading {
+  background: linear-gradient(135deg, #4ade80, #22c55e);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.football-subheading {
+  margin-top: 12px;
+  font-size: 17px;
+  color: #666;
+}
+
+.dark-mode .football-subheading {
+  color: #aaa;
+}
+
+/* ── Row 1: Hero (cards + lottie) ── */
+.football-hero {
+  width: 100%;
+  max-width: 1060px;
+  display: flex;
+  align-items: stretch;
+  gap: 32px;
+}
+
+/* Left: cards wrapper */
+.football-cards {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Two cards side by side in one row */
+.football-cards-row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;   /* cards only as tall as their content */
+}
+
+/* Right: lottie */
+.football-lottie {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 460px;
+}
+
+/* ── Card base ── */
+.football-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  padding: 22px 20px;          /* tighter padding */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+  flex: 1;                     /* equal width (not height) within the row */
+}
+
+.football-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Shimmer */
+.card-shine {
+  position: absolute;
+  top: 0; left: -80%;
+  width: 60%; height: 100%;
+  background: linear-gradient(to right, transparent, rgba(255,255,255,0.2), transparent);
+  transform: skewX(-20deg);
+  transition: left 0.6s ease;
+  pointer-events: none;
+}
+
+.football-card:hover .card-shine { left: 130%; }
+
+/* Team card */
+.team-card {
+  background: linear-gradient(145deg, #1a1a2e, #16213e);
+  box-shadow: 0 16px 40px rgba(254, 190, 16, 0.2);
+  border: 1px solid rgba(254, 190, 16, 0.3);
+}
+.team-card:hover { box-shadow: 0 24px 56px rgba(254, 190, 16, 0.4); }
+
+.team-badge-img {
+  width: 88px;
+  height: 88px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  filter: drop-shadow(0 0 10px rgba(254, 190, 16, 0.55));
+  transition: transform 0.3s ease;
+}
+.team-card:hover .team-badge-img { transform: scale(1.08); }
+
+.team-name {
+  font-size: 26px;
+  font-weight: 800;
+  color: #FEBE10;
+  margin: 6px 0;
+}
+
+.team-meta {
+  color: #aaa;
+  font-size: 14px;
+  margin: 4px 0 0;
+}
+
+.team-tagline {
+  margin-top: 14px;
+  background: rgba(254, 190, 16, 0.12);
+  border: 1px solid rgba(254, 190, 16, 0.4);
+  color: #FEBE10;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 7px 22px;
+  border-radius: 30px;
+  letter-spacing: 1px;
+}
+
+/* Player card */
+.player-card {
+  background: linear-gradient(145deg, #0f172a, #1e293b);
+  box-shadow: 0 16px 40px rgba(59, 130, 246, 0.2);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+.player-card:hover { box-shadow: 0 24px 56px rgba(59, 130, 246, 0.4); }
+
+.player-number {
+  font-size: 52px;
+  font-weight: 900;
+  color: rgba(59, 130, 246, 0.7);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.player-name {
+  font-size: 24px;
+  font-weight: 800;
+  color: #60a5fa;
+  margin: 6px 0;
+}
+
+.player-meta {
+  color: #94a3b8;
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+.player-nationality {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.card-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+/* ── Stats strip (inside the left column) ── */
+.football-stats {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background: rgba(34, 197, 94, 0.06);
+  border: 1px solid rgba(34, 197, 94, 0.2);
+  border-radius: 16px;
+  padding: 18px 14px;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.dark-mode .football-stats {
+  background: rgba(34, 197, 94, 0.04);
+  border-color: rgba(34, 197, 94, 0.15);
+}
+
+.stat-item {
+  text-align: center;
+  flex: 1;
+  min-width: 100px;
+}
+
+.stat-value {
+  font-size: 30px;
+  font-weight: 800;
+  color: #22c55e;
+}
+
+.stat-label {
+  font-size: 13px;
+  color: #888;
+  margin-top: 4px;
+}
+
+.dark-mode .stat-label { color: #aaa; }
+
+/* ── Row 3: Big quote card ── */
+.football-quote-card {
+  width: 100%;
+  max-width: 1060px;
+  background: linear-gradient(135deg, #141414, #242424);
+  border-radius: 24px;
+  padding: 56px 60px;          /* much taller padding */
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+}
+
+.football-quote-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 48px rgba(0,0,0,0.35);
+}
+
+.quote-icon {
+  font-size: 56px;
+  color: #22c55e;
+  line-height: 1;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.quote-text {
+  font-size: 22px;
+  font-style: italic;
+  color: #e5e7eb;
+  line-height: 1.75;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.quote-author {
+  font-size: 16px;
+  font-weight: 600;
+  color: #22c55e;
+  margin: 18px auto 0;
+  letter-spacing: 0.5px;
+}
+
+.quote-tap {
+  display: block;
+  margin-top: 24px;
+  font-size: 13px;
+  color: #555;
+  letter-spacing: 0.5px;
+  transition: color 0.2s;
+}
+
+.football-quote-card:hover .quote-tap { color: #22c55e; }
+
+/* ── Next Match Section ── */
+.next-match-section {
+  width: 100%;
+  max-width: 1060px;
+}
+
+.next-match-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #22c55e;
+  margin-bottom: 12px;
+}
+
+.live-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #22c55e;
+  display: inline-block;
+  animation: pulse-dot 1.4s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.6); }
+  50%       { box-shadow: 0 0 0 7px rgba(34, 197, 94, 0); }
+}
+
+.next-match-card {
+  background: linear-gradient(145deg, #0d0d1a, #111827);
+  border: 1px solid rgba(34, 197, 94, 0.25);
+  border-radius: 20px;
+  padding: 28px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 12px 40px rgba(34, 197, 94, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.next-match-card:hover {
+  box-shadow: 0 18px 50px rgba(34, 197, 94, 0.2);
+}
+
+/* Competition row */
+.nm-competition {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #94a3b8;
+}
+
+.nm-competition-logo {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  filter: brightness(1.2);
+}
+
+.nm-matchday {
+  color: #555;
+  font-weight: 400;
+}
+
+/* Teams row */
+.nm-teams {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.nm-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.nm-crest {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.1));
+  transition: transform 0.3s ease;
+}
+
+.next-match-card:hover .nm-crest { transform: scale(1.06); }
+
+.nm-team-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #e2e8f0;
+  text-align: center;
+}
+
+.nm-vs-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.nm-vs {
+  font-size: 22px;
+  font-weight: 900;
+  color: #22c55e;
+  letter-spacing: 3px;
+}
+
+.nm-countdown {
+  font-size: 13px;
+  font-weight: 700;
+  color: #fbbf24;
+  background: rgba(251, 191, 36, 0.1);
+  border: 1px solid rgba(251, 191, 36, 0.3);
+  padding: 4px 12px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+/* Date/time row */
+.nm-datetime {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding-top: 4px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.nm-date,
+.nm-time {
+  font-size: 14px;
+  color: #64748b;
+  font-weight: 500;
+}
+
+/* Loading skeleton */
+.next-match-loading {
+  gap: 14px;
+}
+
+.nm-skeleton {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  height: 20px;
+  animation: shimmer 1.6s ease-in-out infinite;
+}
+
+.nm-skeleton-wide    { width: 100%; }
+.nm-skeleton-narrow  { width: 60%; margin: 0 auto; }
+
+@keyframes shimmer {
+  0%, 100% { opacity: 0.4; }
+  50%       { opacity: 0.9; }
+}
+
+/* Error state */
+.next-match-error {
+  color: #ef4444;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* ── Responsive: tablet ── */
+@media (max-width: 860px) {
+  .football-main { padding: 40px 16px 60px; gap: 22px; }
+
+  .football-heading { font-size: 30px; }
+  .football-ball-icon { font-size: 28px; }
+  .football-subheading { font-size: 15px; }
+
+  .football-hero {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Lottie on top, smaller */
+  .football-lottie { max-width: 260px; order: -1; }
+
+  /* Cards side-by-side (not stacked) to save vertical space */
+  .football-cards  { width: 100%; }
+  .football-cards-row {
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .football-card { padding: 16px 12px; border-radius: 16px; }
+
+  .team-badge-img { width: 64px; height: 64px; }
+  .team-name      { font-size: 18px; }
+  .team-meta      { font-size: 12px; }
+  .team-tagline   { font-size: 12px; padding: 5px 12px; margin-top: 10px; }
+
+  .player-number  { font-size: 36px; }
+  .player-name    { font-size: 17px; }
+  .player-meta    { font-size: 12px; }
+  .player-nationality { font-size: 16px; }
+
+  /* Stats: 2×2 grid */
+  .football-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 14px 10px;
+    gap: 10px;
+    margin-top: 12px;
+  }
+  .stat-item   { min-width: unset; }
+  .stat-value  { font-size: 24px; }
+  .stat-label  { font-size: 12px; }
+
+  .football-quote-card { padding: 28px 20px; }
+  .quote-text { font-size: 16px; }
+
+  /* Next match */
+  .next-match-card { padding: 18px 16px; gap: 14px; }
+  .nm-crest        { width: 52px; height: 52px; }
+  .nm-team-name    { font-size: 13px; }
+  .nm-vs           { font-size: 18px; }
+  .nm-datetime     { flex-direction: column; align-items: center; gap: 4px; }
+  .nm-date, .nm-time { font-size: 13px; }
+}
+
+/* ── Responsive: small mobile (≤480px) ── */
+@media (max-width: 480px) {
+  .football-main { padding: 32px 12px 48px; gap: 18px; }
+
+  .football-title-wrap { gap: 10px; }
+  .football-heading    { font-size: 24px; }
+  .football-ball-icon  { font-size: 22px; }
+  .football-subheading { font-size: 13px; }
+
+  .football-lottie { max-width: 200px; }
+
+  .football-cards-row { gap: 8px; }
+  .football-card  { padding: 14px 10px; border-radius: 14px; }
+
+  .team-badge-img { width: 52px; height: 52px; }
+  .team-name      { font-size: 15px; }
+  .team-meta      { font-size: 11px; }
+  .team-tagline   { font-size: 11px; padding: 4px 10px; letter-spacing: 0; }
+
+  .player-number  { font-size: 28px; }
+  .player-name    { font-size: 14px; }
+  .player-meta    { font-size: 11px; }
+  .player-nationality { font-size: 14px; }
+  .card-label     { font-size: 9px; }
+
+  .stat-value  { font-size: 20px; }
+  .stat-label  { font-size: 11px; }
+
+  /* Next match: stack crests vertically */
+  .next-match-card { padding: 14px 12px; gap: 12px; border-radius: 16px; }
+
+  .nm-competition { font-size: 12px; }
+
+  .nm-teams {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .nm-team {
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+  }
+  .nm-crest     { width: 40px; height: 40px; }
+  .nm-team-name { font-size: 14px; }
+
+  .nm-vs-block {
+    flex-direction: row;
+    gap: 12px;
+    justify-content: center;
+  }
+  .nm-vs        { font-size: 16px; letter-spacing: 2px; }
+  .nm-countdown { font-size: 12px; padding: 3px 10px; }
+
+  .nm-date, .nm-time { font-size: 12px; }
+}
