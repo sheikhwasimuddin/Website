@@ -194,7 +194,7 @@ const educationInfo = {
       desc: "",
       descBullets: [
         "Completed Class 10th",
-        "CBSE X - 86.5%"
+        "CBSE X - 86.8%"
       ],
       website: "https://stxaviersbilaspur.com"
     },
