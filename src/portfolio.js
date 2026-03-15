@@ -193,7 +193,7 @@ const educationInfo = {
       desc: "",
       descBullets: [
         "Completed Class 10th",
-        "CBSE X - 86.5%"
+        "CBSE X - 86.8%"
       ],
       website: "https://stxaviersbilaspur.com"
     },
@@ -469,7 +469,7 @@ const isHireable = true; // Set false if you are not looking for a job. Also isH
 
 // Researcher Terminal Section
 const researcherTerminal = {
-  display: true,
+  display: false,
   title: "Researcher Terminal",
   commands: [
     { cmd: "whoami", output: "Sheikh Wasimuddin - Full Stack Engineer, AI Enthusiast" },

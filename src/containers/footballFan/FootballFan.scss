@@ -211,7 +211,17 @@
   color: #555;
   margin-bottom: 6px;
 }
-
+.player-tagline {
+  margin-top: 14px;
+  background: rgba(254, 190, 16, 0.12);
+  border: 1px solid rgba(254, 190, 16, 0.4);
+  color: #FEBE10;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 7px 22px;
+  border-radius: 30px;
+  letter-spacing: 1px;
+}
 /* ── Stats strip (inside the left column) ── */
 .football-stats {
   width: 100%;
