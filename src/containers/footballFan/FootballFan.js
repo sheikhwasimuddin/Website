@@ -16,7 +16,8 @@ const favoritePlayer = {
   position: "Midfielder",
   number: 8,
   club: "Real Madrid",
-  nationality: "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Uruguay"
+  nationality: "🏴󠁧󠁢󠁥󠁮󠁧 Uruguay",
+  tagline: "El Halcón"
 };
 
 const footballStats = [
@@ -128,6 +129,7 @@ export default function FootballFan() {
               <h2 className="player-name">{favoritePlayer.name}</h2>
               <p className="player-meta">{favoritePlayer.position} · {favoritePlayer.club}</p>
               <p className="player-nationality">{favoritePlayer.nationality}</p>
+              <div className="player-tagline">{favoritePlayer.tagline}</div>
             </div>
           </div>
 
