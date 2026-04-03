@@ -228,32 +228,7 @@ const techStack = {
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
-    {
-      role: "Front-End Software Developer Intern",
-      company: "Skyscanner",
-      companylogo: require("./assets/images/skyscanner.png"),
-      date: "March 2025 – April 2025",
-      desc: "Front-End Software Developer | Skyscanner (Forage)",
-      descBullets: [
-        "Developed a Backpack React Web App as part of the program. Worked with React.js, JavaScript, HTML, CSS, and Git",
-        "Designed interactive user interfaces and managed component state.",
-        " Optimized performance and followed industry best practices. ",
-        "Gained hands-on experience in front-end development."
-      ]
-    },
-    {
-      role: "Junior Software Developer Intern",
-      company: "YuvaIntern ",
-      companylogo: require("./assets/images/yuva.png"),
-      date: "April 2025 – May 2025",
-      desc: "Junior Software Developer Intern At Yuva Intern",
-      descBullets: [
-        "Implemented interactive UI elements following modern design practices.",
-        "Developed front-end components and optimized web application performance.",
-        " Strengthened skills in frontend development, code optimization, and cross-browser compatibility. ",
-        "Gained hands-on experience in front-end development."
-      ]
-    },
+      
     {
       role: "Co head In Design",
       company: "CTSC YCCE ",
@@ -276,6 +251,17 @@ const workExperiences = {
         "Worked under the guidance of Dr. N. Jayanth at the Centre of Excellence in Product Design and Smart Manufacturing",
         "Gained hands-on experience in Mechatronics, integrating mechanical systems with electronics and control engineering",
         "Explored Additive Manufacturing (3D Printing) techniques and their applications in rapid prototyping and product development"
+      ]
+    },
+    {
+      role: "Web Development Intern",
+      company: "QuickAyur",
+      companylogo: require("./assets/images/QuickAyur.png"),
+      date: "Febraury 2026 – Present",
+      desc: "Developed and maintained the company's website, ensuring a seamless user experience and responsive design.",
+      descBullets: [
+        "Collaborated with the marketing team to implement new features and optimize website performance, resulting in a 20% increase in user engagement.",
+        "Utilized React, and JavaScript to create dynamic web pages and enhance the overall functionality of the site."
       ]
     }
   ]
@@ -478,17 +464,6 @@ const researcherTerminal = {
   ]
 };
 
-// AI Chatbot Section
-const aiChatbot = {
-  display: false,
-  title: "AI Chatbot",
-  questions: [
-    { q: "Tell me about your tech stack.", a: "My primary tech stack includes MERN stack, Python, and AWS. I also have experience with IoT integrations." },
-    { q: "What are your core strengths?", a: "Building interactive user interfaces, scalable backend systems, and data visualization dashboards." },
-    { q: "Are you open to work?", a: "Yes, I am currently available for open opportunities." }
-  ]
-};
-
 // Researcher Laboratory Section
 const researcherLaboratory = {
   display: false,
@@ -539,7 +514,7 @@ export {
   openSource,
   resumeSection,
   researcherTerminal,
-  aiChatbot,
+  
   researcherLaboratory,
   liveMetrics,
   githubProfileSection
