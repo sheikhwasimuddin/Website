@@ -1,10 +1,8 @@
 import React, {useContext} from "react";
 import "./Contact.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import {illustration, contactInfo} from "../../portfolio";
+import {contactInfo, githubProfileSection} from "../../portfolio";
 import {Fade} from "react-reveal";
-import email from "../../assets/lottie/email";
-import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Contact() {
@@ -53,14 +51,10 @@ export default function Contact() {
             </div>
           </div>
           <div className="contact-image-div">
-            {illustration.animated ? (
-              <DisplayLottie animationData={email} />
-            ) : (
-              <img
-                alt="Man working"
-                src={require("../../assets/images/contactMailDark.svg")}
-              ></img>
-            )}
+            <img
+              alt="GitHub profile"
+              src={`https://github.com/${githubProfileSection.userName}.png?size=600`}
+            ></img>
           </div>
         </div>
       </div>

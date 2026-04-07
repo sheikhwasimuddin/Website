@@ -12,6 +12,10 @@
   flex: 1;
 }
 
+.contact-div-main {
+  align-items: center;
+}
+
 .contact-title {
   font-size: 65px;
   font-weight: 400;
@@ -41,15 +45,25 @@
   margin-top: 1.5rem;
 }
 
+.contact-header {
+  display: flex;
+  flex-direction: column;
+}
+
 .contact-margin-top {
   margin-top: 4rem;
 }
 
+.contact-image-div {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .contact-image-div > img {
-  max-width: 100%;
-  height: auto;
-  margin-left: 1.5rem;
-  margin-top: -4rem;
+  width: min(320px, 100%);
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 /* Media Query */
@@ -82,6 +96,6 @@
   }
 
   .contact-image-div {
-    display: none;
+    justify-content: center;
   }
 }
