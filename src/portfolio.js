@@ -311,7 +311,22 @@ const bigProjects = {
         }
         // you can add extra buttons here.
       ]
-    },
+    },{
+      image: require("./assets/images/datasnaps.png"),
+      projectName: "DataSnaps",
+      projectDesc: [
+        "Developed a user-friendly web application for creating and managing online forms and surveys, enabling seamless data collection and analysis.",
+        " Developed an interface for creating online forms and surveys similar to Google Forms.",
+        "Enabled response collection, form control, and required field management.",
+      ],
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://datasnaps.onrender.com/"
+        }
+        // you can add extra buttons here.
+      ]
+    }
 
   ],
   display: true // Set false to hide this section, defaults to true
@@ -335,7 +350,7 @@ const achievementSection = {
       imageAlt: "Coursera Logo",
       footerLink: [
         {
-          name: "Certification",
+          name: "View Certification",
           url: "https://drive.google.com/file/d/1NEbrJaQkXYZ_1nZHREUk27iDlmj7o5h0/view?usp=sharing"
         },
       ]
@@ -364,6 +379,18 @@ const achievementSection = {
         {
           name: "View Certificate",
           url: "https://drive.google.com/file/d/19e7N7uMn9w4UNKHozNEq7FQjl9miKyGS/view?usp=sharing"
+        }
+      ]
+    },
+     {
+      title: "Tree Nation",
+      subtitle: ["Tree Plantation Certificate for planting 4 trees in the name of Sheikh Wasimuddin."],
+      image: require("./assets/images/treenation.png"),
+      imageAlt: "Tree Nation Logo",
+      footerLink: [
+        {
+          name: "View Profile",
+          url: "https://tree-nation.com/profile/sheikh-wasimuddin"
         }
       ]
     }
@@ -448,7 +475,7 @@ const contactInfo = {
 
 const twitterDetails = {
   userName: "sk_wasimuddin07", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
 const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
