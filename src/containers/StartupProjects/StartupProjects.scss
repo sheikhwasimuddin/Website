@@ -60,10 +60,12 @@
   text-align: center;
 }
 .project-card-light:hover {
-  box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
+  box-shadow: $edits 0px 20px 30px -10px;
+  transform: translateY(-4px);
 }
 .project-card-dark:hover {
-  box-shadow: 0px 20px 30px -10px $darkBoxShadow;
+  box-shadow: 0px 20px 30px -10px $edits;
+  transform: translateY(-4px);
 }
 .project-image {
   position: relative;
@@ -79,14 +81,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem 1rem;
-  
-}
-.projects-container:hover {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem 1rem;
-  box-shadow: 0 1px 10px $edits;
-  border-radius: 10px;
 }
 
 .project-card-footer span.project-tag {
