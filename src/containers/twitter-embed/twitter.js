@@ -7,7 +7,7 @@ import StyleContext from "../../contexts/StyleContext";
 
 const renderLoader = () => <Loading />;
 const cantDisplayError =
-  "<div className='centerContent'><h2>Can't load? Check privacy protection settings</h2></div>";
+"<div className='centerContent'><h2>Can't load? Check privacy protection settings</h2></div>";
 
 function timeOut() {
   setTimeout(function () {

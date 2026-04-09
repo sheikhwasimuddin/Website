@@ -107,6 +107,10 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-aws"
     },
     {
+      skillName: "C",
+      fontAwesomeClassname: "fas fa-code"
+    },
+    {
       skillName: "R",
       fontAwesomeClassname: "fab fa-r-project"
     },
@@ -118,18 +122,15 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "java",
       fontAwesomeClassname: "fab fa-java"
     },
-    {
-      skillName: "C",
-      fontAwesomeClassname: "fas fa-code"
-    },
+    
     {
       skillName: "Expressjs",
       fontAwesomeClassname: "fas fa-server"
     },
 
     {
-      skillName: "Expressjs",
-      fontAwesomeClassname: "fas fa-server"
+    skillName: "TypeScript",
+    fontAwesomeClassname: "fas fa-code"
     },
 
     {
@@ -139,6 +140,18 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "Power BI",
       fontAwesomeClassname: "fas fa-chart-bar"
+    },
+    {
+    skillName: "ThingSpeak",
+    fontAwesomeClassname: "fas fa-chart-line"
+    },
+    {
+    skillName: "Cisco Packet Tracer",
+    fontAwesomeClassname: "fas fa-network-wired"
+    },
+    {
+    skillName: "Raspberry Pi",
+    fontAwesomeClassname: "fab fa-raspberry-pi"
     },
     {
       skillName: "Figma",
@@ -384,7 +397,7 @@ const achievementSection = {
     },
      {
       title: "Tree Nation",
-      subtitle: ["Tree Plantation Certificate for planting 4 trees in the name of Sheikh Wasimuddin."],
+      subtitle: ["Tree Plantation Certificate for planting Multiple trees in the name of Sheikh Wasimuddin."],
       image: require("./assets/images/treenation.png"),
       imageAlt: "Tree Nation Logo",
       footerLink: [
