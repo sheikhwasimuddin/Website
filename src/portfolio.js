@@ -390,7 +390,7 @@ const achievementSection = {
       footerLink: [
         {
           name: "View Profile",
-          url: "https://tree-nation.com/profile/sheikh-wasimuddin"
+          url: "https://tree-nation.com/profile/sheikhwasimuddin"
         }
       ]
     }
