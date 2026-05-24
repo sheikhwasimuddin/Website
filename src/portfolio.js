@@ -270,7 +270,7 @@ const workExperiences = {
       role: "Web Development Intern",
       company: "QuickAyur",
       companylogo: require("./assets/images/QuickAyur.png"),
-      date: "Febraury 2026 – Present",
+      date: "Febraury 2026 – May 2026",
       desc: "Developed and maintained the company's website, ensuring a seamless user experience and responsive design.",
       descBullets: [
         "Collaborated with the marketing team to implement new features and optimize website performance, resulting in a 20% increase in user engagement.",
