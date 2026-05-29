@@ -252,18 +252,33 @@ const workExperiences = {
         "As Co-Head of Design at CTSC YCCE, I led the visual design efforts for technical and cultural events, workshops, and seminars organized by the chapter.",
         "  I focused on creating clean, intuitive, and responsive designs that enhanced user engagement and team coordination. ",
         "My responsibilities included designing event posters, social media creatives, banners, and presentations using tools like Figma, Canva, and Adobe Illustrator."
+      ],
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: process.env.PUBLIC_URL + "/2nd%20year%20co%20heads.pdf"
+        }
       ]
     },
     {
       role: "Summer Research Intern",
       company: "Maulana Azad National Institute of Technology",
-      companylogo: require("./assets/images/manit.png"),
+      companylogo: process.env.PUBLIC_URL + "/manit.png",
       date: "May 2025 – July 2025",
       desc: "Outreach Summer Internship",
       descBullets: [
         "Worked under the guidance of Dr. N. Jayanth at the Centre of Excellence in Product Design and Smart Manufacturing",
         "Gained hands-on experience in Mechatronics, integrating mechanical systems with electronics and control engineering",
         "Explored Additive Manufacturing (3D Printing) techniques and their applications in rapid prototyping and product development"
+      ],
+      footerLink: [
+        {
+          name: "View Letter of Recommendation",
+          url: process.env.PUBLIC_URL + "/letter%20of%20recommadation.pdf"
+        },{
+          name: "View Certificate",
+          url: process.env.PUBLIC_URL + "/MANIT.jpg"
+        }
       ]
     },
     {
@@ -275,6 +290,16 @@ const workExperiences = {
       descBullets: [
         "Collaborated with the marketing team to implement new features and optimize website performance, resulting in a 20% increase in user engagement.",
         "Utilized React, and JavaScript to create dynamic web pages and enhance the overall functionality of the site."
+      ],
+      footerLink: [
+        {
+          name: "View Performance Review",
+          url: process.env.PUBLIC_URL + "/Preformance%20Review%20Report_Sheikh%20Wasimuddin%20quickayur.pdf"
+        },
+        {
+          name: "View Certificate",
+          url: process.env.PUBLIC_URL + "/certificate%20quickayur.jpeg"
+        }
       ]
     }
   ]
