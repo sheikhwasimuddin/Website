@@ -242,24 +242,7 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
       
-    {
-      role: "Co head In Design",
-      company: "CTSC YCCE ",
-      companylogo: require("./assets/images/ctsc.jpg"),
-      date: "August 2024 – July 2025 ",
-      desc: "Co-Head of Design in CTSC YCCE",
-      descBullets: [
-        "As Co-Head of Design at CTSC YCCE, I led the visual design efforts for technical and cultural events, workshops, and seminars organized by the chapter.",
-        "  I focused on creating clean, intuitive, and responsive designs that enhanced user engagement and team coordination. ",
-        "My responsibilities included designing event posters, social media creatives, banners, and presentations using tools like Figma, Canva, and Adobe Illustrator."
-      ],
-      footerLink: [
-        {
-          name: "View Certificate",
-          url: process.env.PUBLIC_URL + "/2nd%20year%20co%20heads.pdf"
-        }
-      ]
-    },
+    
     {
       role: "Summer Research Intern",
       company: "Maulana Azad National Institute of Technology",
@@ -285,7 +268,7 @@ const workExperiences = {
       role: "Web Development Intern",
       company: "QuickAyur",
       companylogo: require("./assets/images/QuickAyur.png"),
-      date: "Febraury 2026 – May 2026",
+      date: "February 2026 – May 2026",
       desc: "Developed and maintained the company's website, ensuring a seamless user experience and responsive design.",
       descBullets: [
         "Collaborated with the marketing team to implement new features and optimize website performance, resulting in a 20% increase in user engagement.",
@@ -294,12 +277,68 @@ const workExperiences = {
       footerLink: [
         {
           name: "View Performance Review",
-          url: process.env.PUBLIC_URL + "/Preformance%20Review%20Report_Sheikh%20Wasimuddin%20quickayur.pdf"
+          url: process.env.PUBLIC_URL + "/Performance%20Review%20Report_Sheikh%20Wasimuddin%20quickayur.pdf"
         },
         {
           name: "View Certificate",
           url: process.env.PUBLIC_URL + "/certificate%20quickayur.jpeg"
         }
+      ]
+    }
+  ]
+};
+
+// Club and Society Positions
+
+const clubPositions = {
+  display: true,
+  title: "Leadership & Club Positions",
+    positions: [{
+      role: "Co-Head, Design",
+      company: "CTSC YCCE",
+      companylogo: require("./assets/images/ctsc.jpg"),
+      date: "August 2024 - July 2025",
+      desc: "Co-head of the design team for CTSC YCCE.",
+      descBullets: [
+        "Led visual branding for chapter events and workshops.",
+        "Designed posters, banners, and social media creatives.",
+        "Coordinated with teams to deliver assets on tight timelines."
+      ]
+    },
+    {
+      role: "Co-Head, Database",
+      company: "Yash 26.0",
+      companylogo: require("./assets/images/ycce.png"),
+      date: "January 2026 - March 2026",
+      desc: "Co-head of the database team for Yash 26.0.",
+      descBullets: [
+        "Managed participant data collection and cleanup workflows.",
+        "Coordinated database access for event registration.",
+        "Prepared reports for organizing committee decisions."
+      ]
+    },
+    {
+      role: "Database Team Member",
+      company: "GFG YCCE",
+      companylogo: require("./assets/images/ycce.png"),
+      date: "August 2025 - April 2026",
+      desc: "Database team member in GFG YCCE.",
+      descBullets: [
+        "Maintained student participation records for activities.",
+        "Assisted in data validation and conflict resolution.",
+        "Supported event analytics and summary reports."
+      ]
+    },
+    {
+      role: "Database Executive",
+      company: "CT Compufest",
+      companylogo: require("./assets/images/ctsc.jpg"),
+      date: "June 2025 - August 2025",
+      desc: "Database executive for CT Compufest.",
+      descBullets: [
+        "Built and organized event registration datasets.",
+        "Tracked team entries, results, and certificate details.",
+        "Worked with organizers to resolve data issues quickly."
       ]
     }
   ]
@@ -568,6 +607,7 @@ export {
   educationInfo,
   techStack,
   workExperiences,
+  clubPositions,
   bigProjects,
   achievementSection,
   blogSection,
