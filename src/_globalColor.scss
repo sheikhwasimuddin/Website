@@ -1,7 +1,22 @@
 // button colors
-$buttonColor: #6366f1; // Indigo 500 (Primary Button Color)
-$buttonHover: #818cf8; // Indigo 400 (Button Hover)
-$topButtonHover: #4f46e5; // Indigo 600 (Darker Hover)
+:root {
+  --button-color: #ffdd00;
+  --button-hover: #ff0000;
+  --top-button-hover: #ff0000;
+  --button-text-color: #111827;
+}
+
+.dark-mode {
+  --button-color: #6366f1;
+  --button-hover: #818cf8;
+  --top-button-hover: #4f46e5;
+  --button-text-color: #f9fafb;
+}
+
+$buttonColor: var(--button-color); // Theme-aware primary button color
+$buttonHover: var(--button-hover); // Theme-aware button hover color
+$topButtonHover: var(--top-button-hover); // Theme-aware top button hover color
+$buttonTextColor: var(--button-text-color); // Theme-aware button text color
 
 // text colors light theme
 $titleColor: #111827; // Gray 900 (Very Dark Text)
@@ -87,3 +102,7 @@ $instagram: #e1306c;
 $kaggle: #20beff;
 
 $edits:#4ade80;
+
+
+$neoBrutAccent1: #ffdd00; // Vibrant yellow
+$neoBrutAccent2: #ff0000; // Bright red

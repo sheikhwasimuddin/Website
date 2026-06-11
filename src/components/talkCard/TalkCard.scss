@@ -58,7 +58,7 @@
 }
 .talk-button {
   background-color: $buttonColor;
-  color: $textColorDark;
+  color: $buttonTextColor;
   width: 90px;
   padding: 10px 18px;
   border-radius: 3px;
@@ -97,7 +97,7 @@
 
   .talk-button {
     background-color: $buttonColor;
-    color: $textColorDark;
+    color: $buttonTextColor;
     width: 90px;
     padding: 10px 18px;
     border-radius: 3px;

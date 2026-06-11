@@ -1,9 +1,9 @@
 @import "../../_globalColor";
 
 .main-button {
-  background-color: #000;
-  border: solid 1px $edits ;
-  color: $textColorDark;
+  background-color: $buttonColor;
+  border: solid 1px $buttonColor;
+  color: $buttonTextColor;
   font-weight: 700;
   width: max-content;
   padding: 13px 22px;
@@ -20,10 +20,10 @@
   
 }
 .main-button:hover {
-  background-color: $darkBoxShadow2;
-  border: solid 1px $edits ;
-  box-shadow: 0 1px 10px $edits;
-  color: $buttonColor;
+  background-color: $buttonHover;
+  border: solid 1px $buttonHover;
+  box-shadow: 0 1px 10px $buttonHover;
+  color: $buttonTextColor;
   transition: all 0.3s ease 0s;
   transform: translateY(-3px);
 }
