@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import footballerAnimation from "../../assets/lottie/Footballer.json";
+import { gitFutCard } from "../../portfolio";
 import "./FootballFan.scss";
 
 const favoriteTeam = {
@@ -144,9 +145,31 @@ export default function FootballFan() {
           </div>
         </div>
 
-        {/* Right: Lottie animation */}
-        <div className="football-lottie">
-          <DisplayLottie animationData={footballerAnimation} />
+        {/* Right: Lottie + GitFut card */}
+        <div className="football-hero-right">
+          <div className="football-lottie">
+            <DisplayLottie animationData={footballerAnimation} />
+          </div>
+          {gitFutCard.display && (
+            <div className="gitfut-card-container">
+              <div className="gitfut-card-text">
+                <span className="gitfut-card-label">Developer Stats</span>
+                <h4 className="gitfut-card-title">{gitFutCard.title}</h4>
+                <p className="gitfut-card-subtitle">{gitFutCard.subtitle}</p>
+              </div>
+              <a
+                href={gitFutCard.profileUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  className="gitfut-card-image"
+                  src={gitFutCard.imageUrl}
+                  alt="My GitFut card"
+                />
+              </a>
+            </div>
+          )}
         </div>
       </div>
 

@@ -599,6 +599,15 @@ const githubProfileSection = {
   userName: "sheikhwasimuddin"
 };
 
+// GitFut Card
+const gitFutCard = {
+  display: true,
+  title: "My GitFut Card",
+  subtitle: "A live snapshot of my GitHub journey — repos, streaks & contributions.",
+  imageUrl: "https://gitfut.com/sheikhwasimuddin.png?country=in",
+  profileUrl: "https://gitfut.com/sheikhwasimuddin?country=in"
+};
+
 export {
   illustration,
   greeting,
@@ -623,5 +632,6 @@ export {
   
   researcherLaboratory,
   liveMetrics,
-  githubProfileSection
+  githubProfileSection,
+  gitFutCard
 };

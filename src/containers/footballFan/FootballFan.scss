@@ -86,13 +86,90 @@
   align-items: flex-start;   /* cards only as tall as their content */
 }
 
-/* Right: lottie */
+/* Right: lottie + gitfut card */
+.football-hero-right {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  max-width: 520px;
+}
+
 .football-lottie {
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 460px;
+  max-width: 320px;
+}
+
+.gitfut-card-container {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-align: center;
+  max-width: 200px;
+}
+
+.gitfut-card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.gitfut-card-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #555;
+  font-weight: 600;
+}
+
+.dark-mode .gitfut-card-label {
+  color: #aaa;
+}
+
+.gitfut-card-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1e293b;
+  line-height: 1.2;
+}
+
+.dark-mode .gitfut-card-title {
+  color: #f1f5f9;
+}
+
+.gitfut-card-subtitle {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.4;
+  color: #666;
+}
+
+.dark-mode .gitfut-card-subtitle {
+  color: #999;
+}
+
+.gitfut-card-image {
+  display: block;
+  width: auto;
+  max-width: 180px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.03);
+  }
 }
 
 /* ── Card base ── */
@@ -503,8 +580,25 @@
     align-items: center;
   }
 
-  /* Lottie on top, smaller */
-  .football-lottie { max-width: 260px; order: -1; }
+  /* Lottie + GitFut on top */
+  .football-hero-right {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    order: -1;
+    gap: 16px;
+  }
+
+  .football-lottie { max-width: 200px; }
+
+  .gitfut-card-container { max-width: 160px; }
+
+  .gitfut-card-title { font-size: 14px; }
+
+  .gitfut-card-subtitle { font-size: 10px; }
+
+  .gitfut-card-image { max-width: 140px; }
 
   /* Cards side-by-side (not stacked) to save vertical space */
   .football-cards  { width: 100%; }
@@ -558,7 +652,17 @@
   .football-ball-icon  { font-size: 22px; }
   .football-subheading { font-size: 13px; }
 
-  .football-lottie { max-width: 200px; }
+  .football-hero-right { gap: 12px; }
+
+  .football-lottie { max-width: 160px; }
+
+  .gitfut-card-container { max-width: 140px; gap: 8px; }
+
+  .gitfut-card-title { font-size: 13px; }
+
+  .gitfut-card-subtitle { font-size: 9px; }
+
+  .gitfut-card-image { max-width: 120px; }
 
   .football-cards-row { gap: 8px; }
   .football-card  { padding: 14px 10px; border-radius: 14px; }
