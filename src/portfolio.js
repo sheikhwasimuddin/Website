@@ -257,7 +257,7 @@ const workExperiences = {
       footerLink: [
         {
           name: "View Letter of Recommendation",
-          url: process.env.PUBLIC_URL + "/recommendation-letter.pdf"
+          url: "https://drive.google.com/file/d/10VoAtkYvC51BjdkTCRyYDnjPXHmosoJH/view?usp=sharing"
         },{
           name: "View Certificate",
           url: process.env.PUBLIC_URL + "/MANIT.jpg"
@@ -278,11 +278,11 @@ const workExperiences = {
   footerLink: [
     {
       name: "View Performance Review",
-      url: "/Performance-Review-Report-Sheikh-Wasimuddin-QuickAyur.pdf"
+      url: "https://drive.google.com/file/d/1EHIUqrw62-boCEvh-vF0SkFw4-N7Y1RJ/view?usp=sharing"
     },
     {
       name: "View Certificate",
-      url: "/certificate-quickayur.pdf"
+      url: "https://drive.google.com/file/d/1ApskuGKQOxhZmwSdkXtRN7n7fJhYjoyC/view?usp=sharing"
     }
   ]
 
