@@ -278,11 +278,11 @@ const workExperiences = {
       footerLink: [
         {
           name: "View Performance Review",
-          url: process.env.PUBLIC_URL + "/Performance Review Report_Sheikh Wasimuddin quickayur.pdf"
+          url: "/Performance Review Report_Sheikh Wasimuddin quickayur.pdf"
         },
         {
           name: "View Certificate",
-          url: process.env.PUBLIC_URL + "/certificate quickayur.pdf"
+          url: "/certificate quickayur.pdf"
         }
       ]
     }
