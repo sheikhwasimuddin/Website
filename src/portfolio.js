@@ -257,7 +257,7 @@ const workExperiences = {
       footerLink: [
         {
           name: "View Letter of Recommendation",
-          url: process.env.PUBLIC_URL + "/letter%20of%20recommadation.pdf"
+          url: process.env.PUBLIC_URL + "/recommendation letter.pdf"
         },{
           name: "View Certificate",
           url: process.env.PUBLIC_URL + "/MANIT.jpg"
@@ -278,11 +278,11 @@ const workExperiences = {
       footerLink: [
         {
           name: "View Performance Review",
-          url: process.env.PUBLIC_URL + "/Performance.%20Review%20Report_Sheikh%20Wasimuddin%20quickayur.pdf"
+          url: process.env.PUBLIC_URL + "/Performance Review Report_Sheikh Wasimuddin quickayur.pdf"
         },
         {
           name: "View Certificate",
-          url: process.env.PUBLIC_URL + "/certificate%20quickayur.jpeg"
+          url: process.env.PUBLIC_URL + "/certificate quickayur.pdf"
         }
       ]
     }
