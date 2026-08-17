@@ -265,26 +265,27 @@ const workExperiences = {
       ]
     },
     {
-      role: "Web Development Intern",
-      company: "QuickAyur",
-      companylogo: require("./assets/images/QuickAyur.png"),
-      date: "February 2026 – May 2026",
-      desc: "Remote Internship",
-      descBullets: [
-        "Developed and maintained the company's website, ensuring a seamless user experience and responsive design",
-        "Collaborated with the marketing team to implement new features and optimize website performance, resulting in a 20% increase in user engagement.",
-        "Utilized React, and JavaScript to create dynamic web pages and enhance the overall functionality of the site."
-      ],
-      footerLink: [
-        {
-          name: "View Performance Review",
-          url: "/Performance Review Report_Sheikh Wasimuddin quickayur.pdf"
-        },
-        {
-          name: "View Certificate",
-          url: "/certificate quickayur.pdf"
-        }
-      ]
+  role: "Web Development Intern",
+  company: "QuickAyur",
+  companylogo: require("./assets/images/QuickAyur.png"),
+  date: "February 2026 – May 2026",
+  desc: "Remote Internship",
+  descBullets: [
+    "Developed and maintained the company's website, ensuring a seamless user experience and responsive design",
+    "Collaborated with the marketing team to implement new features and optimize website performance, resulting in a 20% increase in user engagement.",
+    "Utilized React, and JavaScript to create dynamic web pages and enhance the overall functionality of the site."
+  ],
+  footerLink: [
+    {
+      name: "View Performance Review",
+      url: "/Performance-Review-Report-Sheikh-Wasimuddin-QuickAyur.pdf"
+    },
+    {
+      name: "View Certificate",
+      url: "/certificate-quickayur.pdf"
+    }
+  ]
+
     }
   ]
 };
