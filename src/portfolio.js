@@ -257,7 +257,7 @@ const workExperiences = {
       footerLink: [
         {
           name: "View Letter of Recommendation",
-          url: process.env.PUBLIC_URL + "/recommendation letter.pdf"
+          url: process.env.PUBLIC_URL + "/recommendation-letter.pdf"
         },{
           name: "View Certificate",
           url: process.env.PUBLIC_URL + "/MANIT.jpg"
